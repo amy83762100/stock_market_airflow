@@ -1,0 +1,24 @@
+name: Main
+
+on:
+    pull_request:
+    push:
+        branches:
+        - main
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v3
+
+        - name: Install pipenv
+            run: pipx install pipenv
+
+        - uses: actions/setup-python@v3
+            with:
+            python-version: '3.11'
+            cache: 'pipenv'
+
+        - run: pipenv install --dev
+        - run: pipenv run black --check

@@ -1,0 +1,5 @@
+data/
+# Python's bytecode cache files
+__pycache__/
+# macOS's .DS_Store files
+.DS_Store
