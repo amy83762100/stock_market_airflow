@@ -62,3 +62,50 @@ def raw_data_processing(stockType: str, ti):
     print(f"{processed_dir}/{stockType}.parquet schema:", r)
 
     return processed_dir
+
+
+def feature_engineering(ti):
+    """
+    Perform feature engineering on processed data by calculating moving averages and rolling medians.
+
+    Args:
+        ti (TaskInstance): The Airflow task instance.
+
+    Returns:
+        str: The file path of the processed data with added features.
+    """
+
+    # Calculate the moving average of the trading volume (Volume) of 30 days per each stock and ETF, and retain it in a newly added column vol_moving_avg.
+    # Calculate the rolling median and retain it in a newly added column adj_close_rolling_med.
+    processed_dir = ti.xcom_pull(task_ids="stocks_raw_data_processing")
+    feature_engineering_dir = os.path.join(processed_dir, "feature_engineering")
+
+    os.makedirs(feature_engineering_dir, exist_ok=True)
+    filename = f"{feature_engineering_dir}/stocks_etfs.parquet"
+    query = f"""
+    COPY (
+        WITH stocks_etfs_data AS (
+            SELECT *
+            FROM read_parquet('{processed_dir}/*.parquet')
+        )
+        SELECT 
+            *,
+            AVG(Volume) OVER (
+                PARTITION BY Symbol
+                ORDER BY Date
+                ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+            ) AS vol_moving_avg,
+            QUANTILE_CONT("Adj Close", 0.5) OVER (
+                PARTITION BY Symbol
+                ORDER BY Date
+                ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+            ) AS adj_close_rolling_med
+        FROM stocks_etfs_data
+    )TO '{filename}' (FORMAT 'parquet', CODEC 'ZSTD')
+    """
+    conn = duckdb.connect()
+    conn.sql(query)
+
+    r = conn.sql(f"DESCRIBE SELECT * FROM '{filename}'")
+    print(f"{filename} schema:", r)
+    return filename

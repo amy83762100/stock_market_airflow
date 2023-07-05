@@ -5,7 +5,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 from download_data import download_data
-from data_processing import raw_data_processing
+from data_processing import raw_data_processing, feature_engineering
 
 
 DAG_ID = "stock_etf_data_pipeline"
@@ -43,7 +43,13 @@ with DAG(
         op_kwargs={"securityType": "stocks"},
     )
 
+    feature_engineering = PythonOperator(
+        task_id="feature_engineering",
+        python_callable=feature_engineering,
+    )
+
     (
         download_data
         >> [etfs_raw_data_processing, stocks_raw_data_processing]
+        >> feature_engineering
     )
