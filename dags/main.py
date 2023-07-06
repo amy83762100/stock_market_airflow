@@ -35,13 +35,13 @@ with DAG(
     etfs_raw_data_processing = PythonOperator(
         task_id="etfs_raw_data_processing",
         python_callable=raw_data_processing,
-        op_kwargs={"securityType": "etfs"},
+        op_kwargs={"stockType": "etfs"},
     )
 
     stocks_raw_data_processing = PythonOperator(
         task_id="stocks_raw_data_processing",
         python_callable=raw_data_processing,
-        op_kwargs={"securityType": "stocks"},
+        op_kwargs={"stockType": "stocks"},
     )
 
     feature_engineering = PythonOperator(
