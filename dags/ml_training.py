@@ -37,7 +37,9 @@ def ml_training(ti):
     )
 
     # Create a RandomForestRegressor model
-    model = RandomForestRegressor(n_estimators=50, max_depth=5, random_state=42)
+    model = RandomForestRegressor(
+        n_estimators=50, max_depth=5, random_state=42, n_jobs=-1
+    )
 
     # Train the model
     model.fit(X_train, y_train)
