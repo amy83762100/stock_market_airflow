@@ -4,7 +4,7 @@ This is a data processing application for ingesting and processing raw stock mar
 
 ## Airflow DAG Diagram
 
-![Screenshot 2023-07-06 at 2 10 15 AM](https://github.com/amy83762100/stock_market_airflow/assets/76548841/ffd9d60e-9b9e-46c0-8aa1-5f2b9290d6fe)
+![Screenshot 2023-07-06 at 2 10 15 AM](https://github.com/amy83762100/stock_market_airflow/assets/76548841/409f9d01-3282-489c-8f2c-c5397c51764a)
 
 The above diagram illustrates the workflow of the data pipeline implemented using Airflow. It shows the tasks and their dependencies.
 
