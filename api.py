@@ -28,7 +28,6 @@ def predict():
 
     # Make prediction
     prediction = model.predict([[vol_moving_avg, adj_close_rolling_med]])
-    print(type(prediction))
     # Return the prediction
     return str(int(prediction[0]))
 

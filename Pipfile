@@ -6,13 +6,14 @@ name = "pypi"
 [packages]
 flask = "*"
 joblib = "*"
-scikit-learn = "*"
+scikit-learn = "==1.0.2"
 
 [dev-packages]
 black = "*"
+gunicorn = "*"
 
 [requires]
-python_version = "3.11"
+python_version = "3.7"
 
 [scripts]
 lint = "black ."
