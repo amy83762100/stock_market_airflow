@@ -43,3 +43,35 @@ To run this application, follow these steps:
 4. In the Airflow web UI, locate and trigger the DAG to begin processing the datasets.
 
 5. Monitor the progress of the DAG execution in the Airflow web UI. Once the processing is complete, you can find the resulting dataset in the `data/processed` folder and the trained predictive model in `data/ml_training` folder.
+
+## Using the API Server
+
+### Live Deployment
+
+For a live deployment of the API server, you can access the following URL:
+
+[https://stock-market-api-v1-0c7118cdd11c.herokuapp.com/predict?vol_moving_avg=12345&adj_close_rolling_med=25](https://stock-market-api-v1-0c7118cdd11c.herokuapp.com/predict?vol_moving_avg=12345&adj_close_rolling_med=25)
+
+Replace `vol_moving_avg` and `adj_close_rolling_med` with the desired values for the moving average of trading volume and rolling median of adjusted close.
+
+### Local Deployment
+
+To make predictions using the trained predictive model locally, you can start the API server with the following steps:
+
+1. Install the required dependencies by running the following command:
+   ```
+   pipenv install
+   ```
+
+2. Start the API server by running the following command:
+   ```
+   pipenv run python api.py
+   ```
+
+
+3. The API server will be running at `http://127.0.0.1:5000`.
+
+4. To make predictions, access the `/predict` endpoint with the required input parameters. For example:
+   ```
+   http://127.0.0.1:5000/predict?vol_moving_avg=12345&adj_close_rolling_med=25
+   ```

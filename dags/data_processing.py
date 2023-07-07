@@ -84,10 +84,6 @@ def feature_engineering(ti):
     filename = f"{feature_engineering_dir}/stocks_etfs.parquet"
     query = f"""
     COPY (
-        WITH stocks_etfs_data AS (
-            SELECT *
-            FROM read_parquet('{processed_dir}/*.parquet')
-        )
         SELECT 
             *,
             AVG(Volume) OVER (
@@ -100,7 +96,7 @@ def feature_engineering(ti):
                 ORDER BY Date
                 ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
             ) AS adj_close_rolling_med
-        FROM stocks_etfs_data
+        FROM read_parquet('{processed_dir}/*.parquet')
     )TO '{filename}' (FORMAT 'parquet', CODEC 'ZSTD')
     """
     conn = duckdb.connect()
