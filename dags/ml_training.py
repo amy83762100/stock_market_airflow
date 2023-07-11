@@ -2,6 +2,7 @@ import os
 import psutil
 import time
 
+
 def ml_training(ti):
     """
     Perform machine learning training on the preprocessed data.
@@ -42,7 +43,12 @@ def ml_training(ti):
     d_train = lgb.Dataset(X_train, label=y_train)
 
     # Setting parameters
-    param = {'num_leaves': 100, 'max_depth': 10, 'boosting': 'dart', 'force_row_wise': True} # learning rate: 0.1
+    param = {
+        "num_leaves": 100,
+        "max_depth": 10,
+        "boosting": "dart",
+        "force_row_wise": True,
+    }  # learning rate: 0.1
     num_round = 100
 
     # Train the model
