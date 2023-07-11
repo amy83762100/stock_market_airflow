@@ -1,0 +1,30 @@
+[2023-07-11T20:19:16.504+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_etf_data_pipeline.feature_engineering manual__2023-07-11T20:12:30.482690+00:00 [queued]>
+[2023-07-11T20:19:16.525+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_etf_data_pipeline.feature_engineering manual__2023-07-11T20:12:30.482690+00:00 [queued]>
+[2023-07-11T20:19:16.527+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-11T20:19:16.551+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): feature_engineering> on 2023-07-11 20:12:30.482690+00:00
+[2023-07-11T20:19:16.557+0000] {standard_task_runner.py:57} INFO - Started process 273 to run task
+[2023-07-11T20:19:16.563+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'stock_etf_data_pipeline', 'feature_engineering', 'manual__2023-07-11T20:12:30.482690+00:00', '--job-id', '107', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpj1kfipnx']
+[2023-07-11T20:19:16.565+0000] {standard_task_runner.py:85} INFO - Job 107: Subtask feature_engineering
+[2023-07-11T20:19:16.643+0000] {task_command.py:410} INFO - Running <TaskInstance: stock_etf_data_pipeline.feature_engineering manual__2023-07-11T20:12:30.482690+00:00 [running]> on host 76fe7741dc03
+[2023-07-11T20:19:16.765+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='stock_market' AIRFLOW_CTX_DAG_ID='stock_etf_data_pipeline' AIRFLOW_CTX_TASK_ID='feature_engineering' AIRFLOW_CTX_EXECUTION_DATE='2023-07-11T20:12:30.482690+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-11T20:12:30.482690+00:00'
+[2023-07-11T20:25:36.891+0000] {logging_mixin.py:149} INFO - /opt/***/data/processed/feature_engineering/stocks_etfs.parquet schema: ┌───────────────────────┬─────────────┬─────────┬─────────┬─────────┬─────────┐
+│      column_name      │ column_type │  null   │   key   │ default │  extra  │
+│        varchar        │   varchar   │ varchar │ varchar │ varchar │ varchar │
+├───────────────────────┼─────────────┼─────────┼─────────┼─────────┼─────────┤
+│ Symbol                │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+│ Security Name         │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+│ Date                  │ VARCHAR     │ YES     │ NULL    │ NULL    │ NULL    │
+│ Open                  │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+│ High                  │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+│ Low                   │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+│ Close                 │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+│ Adj Close             │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+│ Volume                │ BIGINT      │ YES     │ NULL    │ NULL    │ NULL    │
+│ vol_moving_avg        │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+│ adj_close_rolling_med │ DOUBLE      │ YES     │ NULL    │ NULL    │ NULL    │
+├───────────────────────┴─────────────┴─────────┴─────────┴─────────┴─────────┤
+│ 11 rows                                                           6 columns │
+└─────────────────────────────────────────────────────────────────────────────┘
+[2023-07-11T20:25:40.789+0000] {python.py:183} INFO - Done. Returned value was: /opt/***/data/processed/feature_engineering/stocks_etfs.parquet
+[2023-07-11T20:25:41.514+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=stock_etf_data_pipeline, task_id=feature_engineering, execution_date=20230711T201230, start_date=20230711T201916, end_date=20230711T202541
+[2023-07-11T20:25:42.041+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0

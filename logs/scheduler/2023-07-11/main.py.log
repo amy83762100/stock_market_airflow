@@ -1,0 +1,175 @@
+[2023-07-11T20:01:53.280+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:01:53.289+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:01:53.292+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:01:53.292+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:01:53.871+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:01:53.977+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:01:53.976+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:01:54.043+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:01:54.043+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:01:54.085+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.900 seconds
+[2023-07-11T20:09:56.558+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:09:56.562+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:09:56.565+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:09:56.565+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:09:56.784+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:09:57.221+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:09:57.221+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:09:57.274+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:09:57.273+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:09:57.335+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.785 seconds
+[2023-07-11T20:10:27.786+0000] {processor.py:157} INFO - Started process (PID=44) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:10:27.788+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:10:27.791+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:10:27.791+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:10:27.907+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:10:27.984+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:10:27.984+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:10:28.050+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:10:28.050+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:10:28.105+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.327 seconds
+[2023-07-11T20:10:58.523+0000] {processor.py:157} INFO - Started process (PID=58) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:10:58.526+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:10:58.527+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:10:58.527+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:10:58.600+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:10:58.642+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:10:58.642+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:10:58.680+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:10:58.680+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:10:58.711+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.192 seconds
+[2023-07-11T20:11:28.776+0000] {processor.py:157} INFO - Started process (PID=72) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:11:28.780+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:11:28.783+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:11:28.783+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:11:28.882+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:11:28.959+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:11:28.958+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:11:29.019+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:11:29.018+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:11:29.057+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.289 seconds
+[2023-07-11T20:11:59.166+0000] {processor.py:157} INFO - Started process (PID=86) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:11:59.173+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:11:59.177+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:11:59.177+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:11:59.480+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:11:59.580+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:11:59.580+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:11:59.681+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:11:59.681+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:11:59.718+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.561 seconds
+[2023-07-11T20:12:30.038+0000] {processor.py:157} INFO - Started process (PID=100) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:12:30.042+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:12:30.044+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:12:30.044+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:12:30.139+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:12:30.195+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:12:30.195+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:12:30.235+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:12:30.235+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:12:30.264+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.232 seconds
+[2023-07-11T20:13:00.527+0000] {processor.py:157} INFO - Started process (PID=114) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:13:00.533+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:13:00.537+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:13:00.536+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:13:00.731+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:13:00.875+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:13:00.874+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:13:00.942+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:13:00.942+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:13:00.995+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.480 seconds
+[2023-07-11T20:13:31.227+0000] {processor.py:157} INFO - Started process (PID=128) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:13:31.232+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:13:31.236+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:13:31.235+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:13:31.412+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:13:31.534+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:13:31.533+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:13:31.715+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:13:31.715+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:13:31.791+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.585 seconds
+[2023-07-11T20:14:01.938+0000] {processor.py:157} INFO - Started process (PID=142) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:14:01.944+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:14:01.947+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:14:01.947+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:14:02.185+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:14:02.295+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:14:02.295+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:14:02.430+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:14:02.429+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:14:02.488+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.566 seconds
+[2023-07-11T20:14:32.802+0000] {processor.py:157} INFO - Started process (PID=156) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:14:32.809+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:14:32.813+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:14:32.812+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:14:32.999+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:14:33.086+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:14:33.086+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:14:33.155+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:14:33.154+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:14:33.200+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.420 seconds
+[2023-07-11T20:15:03.502+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:15:03.509+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:15:03.514+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:15:03.514+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:15:03.732+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:15:03.805+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:15:03.804+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:15:03.868+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:15:03.867+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:15:03.916+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.434 seconds
+[2023-07-11T20:15:34.099+0000] {processor.py:157} INFO - Started process (PID=184) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:15:34.103+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:15:34.107+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:15:34.106+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:15:34.230+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:15:34.302+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:15:34.302+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:15:34.366+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:15:34.365+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:15:34.412+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.324 seconds
+[2023-07-11T20:16:04.679+0000] {processor.py:157} INFO - Started process (PID=198) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:16:04.691+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:16:04.699+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:16:04.698+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:16:05.487+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:16:05.749+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:16:05.749+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:16:05.887+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:16:05.886+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:16:05.980+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 1.313 seconds
+[2023-07-11T20:16:36.171+0000] {processor.py:157} INFO - Started process (PID=212) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:16:36.177+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:16:36.182+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:16:36.181+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:16:36.426+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:16:36.547+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:16:36.547+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:16:36.623+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:16:36.623+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:16:36.669+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.518 seconds
+[2023-07-11T20:17:06.849+0000] {processor.py:157} INFO - Started process (PID=226) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:17:06.852+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:17:06.854+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:17:06.854+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:17:07.003+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:17:07.065+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:17:07.064+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:17:07.127+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:17:07.127+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:17:07.166+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.324 seconds
+[2023-07-11T20:17:37.591+0000] {processor.py:157} INFO - Started process (PID=244) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:17:37.596+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:17:37.600+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:17:37.599+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:17:37.796+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:17:37.895+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:17:37.895+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:17:37.982+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:17:37.982+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:17:38.047+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.466 seconds
+[2023-07-11T20:18:08.344+0000] {processor.py:157} INFO - Started process (PID=258) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:18:08.347+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:18:08.349+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:18:08.349+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:18:08.471+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:18:08.538+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:18:08.538+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:18:08.621+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:18:08.621+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:18:08.684+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.349 seconds
+[2023-07-11T20:18:38.934+0000] {processor.py:157} INFO - Started process (PID=272) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:18:38.937+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:18:38.939+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:18:38.939+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:18:39.103+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:18:39.222+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:18:39.221+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:18:39.390+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:18:39.390+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:18:39.459+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.534 seconds
+[2023-07-11T20:19:09.773+0000] {processor.py:157} INFO - Started process (PID=287) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:19:09.778+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:19:09.783+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:19:09.782+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:19:09.940+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:19:10.035+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:19:10.035+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:19:10.108+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:19:10.108+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:19:10.174+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.409 seconds
+[2023-07-11T20:19:41.231+0000] {processor.py:157} INFO - Started process (PID=301) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:19:41.255+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:19:41.348+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:19:41.343+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:19:42.408+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:19:42.682+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:19:42.682+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:19:43.054+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:19:43.053+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:19:43.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 2.176 seconds
+[2023-07-11T20:20:13.998+0000] {processor.py:157} INFO - Started process (PID=315) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:20:14.007+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:20:14.012+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:20:14.012+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:20:14.402+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:20:14.623+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:20:14.622+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:20:15.018+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:20:15.017+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:20:15.149+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 1.170 seconds
+[2023-07-11T20:20:46.666+0000] {processor.py:157} INFO - Started process (PID=329) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:20:46.682+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:20:46.689+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:20:46.689+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:20:48.924+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:20:49.840+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:20:49.840+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:20:50.392+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:20:50.387+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:20:50.742+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 4.134 seconds
+[2023-07-11T20:21:21.226+0000] {processor.py:157} INFO - Started process (PID=349) to work on /opt/airflow/dags/main.py
+[2023-07-11T20:21:21.232+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T20:21:21.236+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:21:21.235+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T20:21:23.063+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T20:21:23.589+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:21:23.589+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T20:21:24.084+0000] {logging_mixin.py:149} INFO - [2023-07-11T20:21:24.083+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T20:21:24.449+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 3.296 seconds
+[2023-07-11T21:10:11.830+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/main.py
+[2023-07-11T21:10:11.834+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-07-11T21:10:11.837+0000] {logging_mixin.py:149} INFO - [2023-07-11T21:10:11.836+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-07-11T21:10:12.125+0000] {processor.py:836} INFO - DAG(s) dict_keys(['stock_etf_data_pipeline']) retrieved from /opt/airflow/dags/main.py
+[2023-07-11T21:10:12.728+0000] {logging_mixin.py:149} INFO - [2023-07-11T21:10:12.728+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-07-11T21:10:12.765+0000] {logging_mixin.py:149} INFO - [2023-07-11T21:10:12.764+0000] {dag.py:3490} INFO - Setting next_dagrun for stock_etf_data_pipeline to None, run_after=None
+[2023-07-11T21:10:12.799+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main.py took 0.979 seconds

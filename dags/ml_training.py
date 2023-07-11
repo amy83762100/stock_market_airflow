@@ -1,4 +1,6 @@
 import os
+import psutil
+import time
 
 
 def ml_training(ti):
@@ -12,14 +14,17 @@ def ml_training(ti):
     import pandas as pd
     import joblib
     from sklearn.model_selection import train_test_split
-    from sklearn.ensemble import RandomForestRegressor
     from sklearn.metrics import mean_absolute_error, mean_squared_error
+    import lightgbm as lgb
 
     filename = ti.xcom_pull(task_ids="feature_engineering")
     # Load the data
     data = pd.read_parquet(filename)
-    data["Date"] = pd.to_datetime(data["Date"])
-    data.set_index("Date", inplace=True)
+
+    # Get the process ID and create a process object
+    pid = os.getpid()
+    process = psutil.Process(pid)
+    start = time.time()
 
     # Remove rows with NaN values
     data.dropna(inplace=True)
@@ -35,14 +40,30 @@ def ml_training(ti):
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
+    d_train = lgb.Dataset(X_train, label=y_train)
 
-    # Create a RandomForestRegressor model
-    model = RandomForestRegressor(
-        n_estimators=50, max_depth=5, random_state=42, n_jobs=-1
-    )
+    # Setting parameters
+    param = {
+        "num_leaves": 100,
+        "max_depth": 10,
+        "boosting": "dart",
+        "force_row_wise": True,
+    }  # learning rate: 0.1
+    num_round = 100
 
     # Train the model
-    model.fit(X_train, y_train)
+    model = lgb.train(param, d_train, num_round)
+
+    # Get the process time
+    end = time.time()
+    print("Time:", end - start, "seconds")
+
+    # Get the memory usage of the process
+    memory_info = process.memory_info()
+
+    # Convert the memory usage to megabytes
+    memory_usage_mb = memory_info.rss / (1024 * 1024)
+    print("Memory usage:", memory_usage_mb, "MB")
 
     # Make predictions on test data
     y_pred = model.predict(X_test)

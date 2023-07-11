@@ -1,0 +1,222 @@
+=================== Random Forest ====================
+RandomForestRegressor(n_estimators=50, max_depth=5, random_state=42, n_jobs=-1)
+
+Time: 744.511812210083 seconds
+Memory usage: 506658816 bytes
+Memory usage: 483.1875 MB
+
+Mean Absolute Error: 484881.77221224114
+Mean Squared Error: 44442244640816.664
+
+===================== XGBoost ========================
+xgb.XGBRegressor(n_estimators=100, max_depth=10)
+
+Time: 365.10154700279236 seconds
+Memory usage: 205385728 bytes
+Memory usage: 195.87109375 MB
+
+Mean Absolute Error: 478200.8958828759
+Mean Squared Error: 70078311051180.24
+------------------------------------------------------
+xgb.XGBRegressor(n_estimators=100, max_depth=10, learning_rate=0.1)
+
+Time: 357.9170949459076 seconds
+Memory usage: 1211666432 bytes
+Memory usage: 1155.53515625 MB
+
+Mean Absolute Error: 477941.2536182312
+Mean Squared Error: 70071414179389.195
+
+===================== LightGBM =======================
+[LightGBM] [Info] Total Bins 510
+[LightGBM] [Info] Number of data points in the train set: 22503640, number of used features: 2
+[LightGBM] [Info] Start training from score 1111629.782548
+------------------------------------------------------
+    param = {'num_leaves': 50, 'max_depth': 10}
+    num_round = 50
+
+Mean Absolute Error: 481271.2416018791
+Mean Squared Error: 69713529805296.875
+------------------------------------------------------
+    param = {'num_leaves': 50, 'max_depth': 32}
+    num_round = 50
+
+Mean Absolute Error: 481504.1265345204
+Mean Squared Error: 69718294935889.016
+------------------------------------------------------
+    param = {'num_leaves': 50, 'max_depth': 32}
+    num_round = 100
+
+Mean Absolute Error: 479843.5594970861
+Mean Squared Error: 69648023040988.18
+------------------------------------------------------
+    param = {'num_leaves': 50, 'max_depth': 10} # boosting: 'gbdt', learning rate: 0.1
+    num_round = 100
+
+Time: 49.80724596977234 seconds
+Memory usage: 5048750080 bytes
+Memory usage: 4814.86328125 MB
+
+Mean Absolute Error: 479784.6035935055
+Mean Squared Error: 69644025999803.87
+------------------------------------------------------
+    param = {'num_leaves': 75, 'max_depth': 10} # boosting: 'gbdt', learning rate: 0.1
+    num_round = 100
+
+Time: 57.45555901527405 seconds
+Memory usage: 6089601024 bytes
+Memory usage: 5807.49609375 MB
+
+Mean Absolute Error: 479776.43982511765
+Mean Squared Error: 69650280259173.53
+------------------------------------------------------
+    param = {'num_leaves': 75, 'max_depth': 10, 'force_row_wise': True} # boosting: 'gbdt', learning rate: 0.1
+    num_round = 100
+
+Time: 90.87857699394226 seconds
+Memory usage: 1856696320 bytes
+Memory usage: 1770.68359375 MB
+
+Mean Absolute Error: 479776.43982511765
+Mean Squared Error: 69650280259173.53
+------------------------------------------------------
+    param = {'num_leaves': 100, 'max_depth': 10} # boosting: 'gbdt', learning rate: 0.1
+    num_round = 100
+
+Time: 61.98096776008606 seconds
+Memory usage: 3646119936 bytes
+Memory usage: 3477.2109375 MB
+
+Mean Absolute Error: 479782.4303093736
+Mean Squared Error: 69656517307865.97
+------------------------------------------------------
+    param = {'num_leaves': 50, 'max_depth': 10, 'boosting': 'dart'} # learning rate: 0.1
+    num_round = 100
+
+Time: 191.2017641067505 seconds
+Memory usage: 4586831872 bytes
+Memory usage: 4374.34375 MB
+
+Mean Absolute Error: 461368.8021410267
+Mean Squared Error: 71708712317349.12
+------------------------------------------------------
+    param = {'num_leaves': 75, 'max_depth': 10, 'boosting': 'dart'} # learning rate: 0.1
+    num_round = 100
+
+Time: 255.65244913101196 seconds
+Memory usage: 4133015552 bytes
+Memory usage: 3941.55078125 MB
+
+Mean Absolute Error: 460889.36128305667
+Mean Squared Error: 71708842679219.67
+------------------------------------------------------
+    param = {'num_leaves': 100, 'max_depth': 10, 'boosting': 'dart'} # learning rate: 0.1
+    num_round = 100
+
+Time: 257.4293098449707 seconds
+Memory usage: 5040119808 bytes
+Memory usage: 4806.6328125 MB
+
+Mean Absolute Error: 460743.43089293543
+Mean Squared Error: 71709656974918.84
+------------------------------------------------------
+    param = {'num_leaves': 75, 'max_depth': 10, 'boosting': 'dart', 'force_col_wise': True} # learning rate: 0.1
+    num_round = 100
+
+Time: 599.1005640029907 seconds
+Memory usage: 640081920 bytes
+Memory usage: 610.4296875 MB
+
+Mean Absolute Error: 460889.36128305667
+Mean Squared Error: 71708842679219.67
+------------------------------------------------------
+    param = {'num_leaves': 100, 'max_depth': 10, 'boosting': 'dart', 'force_col_wise': True} # learning rate: 0.1
+    num_round = 100
+
+Time: 655.0137279033661 seconds
+Memory usage: 640929792 bytes
+Memory usage: 611.23828125 MB
+
+Mean Absolute Error: 460743.43089293543
+Mean Squared Error: 71709656974918.84
+------------------------------------------------------
+    param = {'num_leaves': 100, 'max_depth': 10, 'boosting': 'dart', 'force_row_wise': True} # learning rate: 0.1
+    num_round = 100
+
+Time: 531.8741519451141 seconds
+Memory usage: 660385792 bytes
+Memory usage: 629.79296875 MB
+
+Mean Absolute Error: 460743.43089293543
+Mean Squared Error: 71709656974918.84
+------------------------------------------------------
+    param = {'num_leaves': 100, 'max_depth': 10, 'boosting': 'dart', 'force_row_wise': True, 'num_threads': 4} # learning rate: 0.1
+    num_round = 100
+
+Time: 548.4754810333252 seconds
+Memory usage: 658722816 bytes
+Memory usage: 628.20703125 MB
+
+Mean Absolute Error: 460743.43089293543
+Mean Squared Error: 71709656974918.84
+------------------------------------------------------
+    param = {'num_leaves': 50, 'boosting': 'dart'} # learning rate: 0.1, max_depth: -1
+    num_round = 100
+
+Mean Absolute Error: 461714.53857846366
+Mean Squared Error: 71714512617196.2
+------------------------------------------------------
+    param = {'num_leaves': 50, 'max_depth': 10, 'boosting': 'rf', 'bagging_freq': 5, 'feature_fraction': 0.5, 'bagging_fraction': 0.5} # learning rate: 0.1
+    num_round = 100
+
+Time: 113.46222615242004 seconds
+Memory usage: 5684596736 bytes
+Memory usage: 5421.25390625 MB
+
+Mean Absolute Error: 918154.4093183099
+Mean Squared Error: 153479122911341.47
+------------------------------------------------------
+    param = {'num_leaves': 50, 'max_depth': 10} # learning rate: 0.1
+    num_round = 500
+
+Time: 129.02681970596313 seconds
+Memory usage: 6215991296 bytes
+Memory usage: 5928.03125 MB
+
+Mean Absolute Error: 479856.3410212429
+Mean Squared Error: 69634309575747.97
+------------------------------------------------------
+    param = {'num_leaves': 50, 'max_depth': 10, 'learning_rate': 0.05}
+    num_round = 100
+
+Mean Absolute Error: 481365.2359288288
+Mean Squared Error: 69726820803415.73
+------------------------------------------------------
+* Standardized
+    param = {'num_leaves': 50, 'max_depth': 10}
+    num_round = 100
+
+Mean Absolute Error: 546720.6381729828
+Mean Squared Error: 145502156842817.4
+------------------------------------------------------
+* Standardized
+    param = {'num_leaves': 50, 'max_depth': 10}
+    num_round = 50
+
+Mean Absolute Error: 547232.4939530246
+Mean Squared Error: 145512278332099.2
+------------------------------------------------------
+* Standardized
+    param = {'num_leaves': 50, 'max_depth': 10, 'learning_rate': 0.05}
+    num_round = 100
+
+Mean Absolute Error: 547353.3847112013
+Mean Squared Error: 145513876739940.44
+------------------------------------------------------
+* Standardized
+    param = {'num_leaves': 50, 'max_depth': 32, 'learning_rate': 0.05}
+    num_round = 100
+
+Mean Absolute Error: 547360.8319752887
+Mean Squared Error: 145513873446312.56
+======================================================
