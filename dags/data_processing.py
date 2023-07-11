@@ -88,15 +88,17 @@ def feature_engineering(ti):
             *,
             AVG(Volume) OVER (
                 PARTITION BY Symbol
-                ORDER BY Date
-                ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+                ORDER BY strptime(Date,'%Y-%m-%d')
+                RANGE BETWEEN INTERVAL '29 days' PRECEDING AND CURRENT ROW
             ) AS vol_moving_avg,
             QUANTILE_CONT("Adj Close", 0.5) OVER (
                 PARTITION BY Symbol
-                ORDER BY Date
-                ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+                ORDER BY strptime(Date,'%Y-%m-%d')
+                RANGE BETWEEN INTERVAL '29 days' PRECEDING AND CURRENT ROW
             ) AS adj_close_rolling_med
         FROM read_parquet('{processed_dir}/*.parquet')
+        WHERE Volume IS NOT NULL
+            AND "Adj Close" IS NOT NULL
     )TO '{filename}' (FORMAT 'parquet', CODEC 'ZSTD')
     """
     conn = duckdb.connect()
