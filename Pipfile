@@ -7,6 +7,7 @@ name = "pypi"
 flask = "*"
 joblib = "*"
 scikit-learn = "==1.0.2"
+lightgbm = "*"
 
 [dev-packages]
 black = "*"
