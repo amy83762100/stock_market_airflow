@@ -5,13 +5,13 @@ name = "pypi"
 
 [packages]
 flask = "*"
+gunicorn = "*"
 joblib = "*"
 scikit-learn = "==1.0.2"
 lightgbm = "*"
 
 [dev-packages]
 black = "*"
-gunicorn = "*"
 
 [requires]
 python_version = "3.7"
