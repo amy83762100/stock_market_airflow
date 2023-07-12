@@ -78,7 +78,7 @@ To make predictions using the trained predictive model locally, you can start th
 
 ## Model Selection and Performance Comparison
 
-We experimented with different models to assess their performance and select the most suitable one based on specific requirements. Here are the results of the conducted experiments:
+I experimented with different models to assess their performance and select the most suitable one based on specific requirements. Here are the results of the conducted experiments:
 
 ###  Experiment 1: RandomForestRegressor (Baseline)
 
